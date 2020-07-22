@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const config = {
   mode: 'development',
   watch: true,
-  entry: ['babel-polyfill', './src/index.tsx'],
+  entry: ['babel-polyfill', './src/app/index.tsx'],
   output: {
     filename: 'bundle.js',
     path: `${__dirname}/dist`,

@@ -2,7 +2,7 @@
   "name": "jest-workshop",
   "version": "1.0.0",
   "description": "A DALI lab workshop teaching the JestJS framework.",
-  "main": "index.ts",
+  "main": "./src/app/index.tsx",
   "author": "Adam McQuilkin",
   "license": "MIT",
   "scripts": {
@@ -15,6 +15,9 @@
     "@babel/preset-env": "^7.10.4",
     "@babel/preset-react": "^7.10.4",
     "@babel/preset-typescript": "^7.10.4",
+    "@testing-library/jest-dom": "^5.11.1",
+    "@testing-library/react": "^10.4.7",
+    "@testing-library/user-event": "^12.0.11",
     "@types/jest": "^26.0.5",
     "@types/react": "^16.9.43",
     "@types/react-dom": "^16.9.8",
