@@ -22,9 +22,12 @@ describe('Input Box', () => {
       />,
     );
 
-    expect(screen.getByLabelText(testLabel)).toBeInTheDocument(); // Label is valid
-    expect(screen.getByRole('textbox')).toHaveValue(testValue); // Value is valid
-    expect(screen.getByRole('textbox')).toHaveAttribute('placeholder', testPlaceholder); // Placeholder is valid
+    // Check that the element with the value of the textLabel variable is in the document
+
+    // Check that the element with the role 'textbox' has the value of the testValue variable
+
+    // Check that the element with the role 'textbox' has a 'placeholder' attribute
+    // with a value equal to the testPlaceholder variable
   });
 
   it('calls setValue function correctly', () => {
@@ -38,11 +41,13 @@ describe('Input Box', () => {
     );
 
     const updatedTestValue = 'New Test Value';
-    userEvent.type(screen.getByRole('textbox'), updatedTestValue);
+    // Type the string held in the updatedTestVariable into the component with a role of 'textbox'
 
-    expect(setValue.mock.calls.length).toBe(updatedTestValue.length); // Function is only called once
-    expect(setValue.mock.calls.join(''))
-      .toBe(updatedTestValue); // Function called on each letter (controlled component)
+    // Check that the setValue function mock was called the correct number of times (once per letter)
+    // Hint: use the length of the setValue.mock.calls variable
+
+    // Check that the setValue function mock was called on each letter in the updatedTestVariable string
+    // Hint: each call of the setValue function will only be called with one letter, try using [array].join('')
   });
 });
 
@@ -51,4 +56,6 @@ describe('Display Box', () => {
   // Hint: you can search for a variable by entering "new RegExp(variableName, 'i')"
   const testLabel = 'Test Label';
   const testValue = 'Test Value';
+
+  // TODO: finish this
 });

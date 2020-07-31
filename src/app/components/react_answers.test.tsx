@@ -40,7 +40,7 @@ describe('Input Box', () => {
     const updatedTestValue = 'New Test Value';
     userEvent.type(screen.getByRole('textbox'), updatedTestValue);
 
-    expect(setValue.mock.calls.length).toBe(updatedTestValue.length); // Function is only called once
+    expect(setValue.mock.calls.length).toBe(updatedTestValue.length); // Function is called the correct number of times
     expect(setValue.mock.calls.join(''))
       .toBe(updatedTestValue); // Function called on each letter (controlled component)
   });
