@@ -57,5 +57,16 @@ describe('Display Box', () => {
   const testLabel = 'Test Label';
   const testValue = 'Test Value';
 
-  // TODO: finish this
+  render(
+    <DisplayBox
+      label={testLabel}
+      value={testValue}
+    />,
+  );
+
+  // Check that an element with the text contained in the testLabel variable exists in the document
+  // Hint: use "new RegExp(testLabel, 'i')" to create a RegEx matcher expression
+
+  // Check that an element with the text contained in the testValue variable exists in the document
+  // Hint: use "new RegExp(testValue, 'i')" to create a RegEx matcher expression
 });
