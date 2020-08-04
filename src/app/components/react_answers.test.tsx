@@ -22,7 +22,7 @@ describe('Input Box', () => {
       />,
     );
 
-    expect(screen.getByLabelText(testLabel)).toBeInTheDocument(); // Label is valid
+    expect(screen.getByLabelText(new RegExp(testLabel, 'i'))).toBeInTheDocument(); // Label is valid
     expect(screen.getByRole('textbox')).toHaveValue(testValue); // Value is valid
     expect(screen.getByRole('textbox')).toHaveAttribute('placeholder', testPlaceholder); // Placeholder is valid
   });
