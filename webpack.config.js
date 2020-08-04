@@ -14,7 +14,7 @@ const config = {
   devtool: 'source-map',
   module: {
     rules: [
-      { test: /\.scss$/, use: ['style-loader', 'css-loader', 'sass-loader'] },
+      { test: /\.s?css$/, use: ['style-loader', 'css-loader', 'sass-loader'] },
       // { test: /\.tsx?$/, loader: "babel-loader", exclude: /node_modules/ },
       // { test: /\.tsx?$/, loader: "ts-loader" },
       { test: /\.tsx?$/, loaders: ['ts-loader', 'babel-loader'], exclude: /node_modules/ },

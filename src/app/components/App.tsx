@@ -1,6 +1,7 @@
 import React from 'react';
 import InputBox from './InputBox';
 import DisplayBox from './DisplayBox';
+import './style.scss';
 
 const App = () => {
   const [value, setValue] = React.useState('');
