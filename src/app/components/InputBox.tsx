@@ -12,6 +12,7 @@ const InputBox = ({
 }: InputBoxProps) => (
   <label className="inputbox-container">
     {label}
+    :
     <input
       type="text"
       value={value}

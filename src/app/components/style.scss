@@ -1,3 +1,6 @@
+$dark-gray: #282c34;
+$element-width: 216px;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -21,10 +24,27 @@ main {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 
   input {
+    border: none;
+    border-bottom: 1px solid $dark-gray;
     margin-left: 12px;
+    width: $element-width;
+
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+    color: $dark-gray;
+
+    &::placeholder {
+      font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+      color: $dark-gray;
+    }
   }
 }
 
 .displaybox-container {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  color: $dark-gray;
+  max-width: calc(#{$element-width} * 1.42);
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
