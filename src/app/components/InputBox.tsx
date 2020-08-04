@@ -15,7 +15,7 @@ const InputBox = ({
     <input
       type="text"
       value={value}
-      onChange={(e) => setValue(e.target.value)}
+      onChange={(e: React.FormEvent<HTMLInputElement>) => setValue(e.currentTarget.value)}
       placeholder={placeholder}
     />
   </label>
